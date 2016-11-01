@@ -1,11 +1,13 @@
 <?php
-namespace designPattern\singleton;
 
 /**
  * @description:
  * @author: wzzjjboy@126.com
  * DateTime: 2016/11/1 17:59
  */
+
+namespace designPattern\singleton;
+
 
 include "../init.php";
 
