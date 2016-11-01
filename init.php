@@ -6,8 +6,8 @@
  */
 
 spl_autoload_register(function($class){
-    $root = str_replace('designPattern', '', str_replace('/', '\\', __DIR__));
-    $file = $root. $class . '.php';
+    $root = str_replace('designPattern', '', str_replace('\\', '/', __DIR__));
+    $file = $root. str_replace('\\', '/', $class) . '.php';
     if(is_file($file)){
         require "$file";
     }
